@@ -58,7 +58,7 @@ WHERE comments.body LIKE '%USB%';
 SELECT posts.title AS post_title, users.first_name, users.last_name, comments.body AS comment_body
 FROM comments
 INNER JOIN posts ON comments.post_id = posts.id
-INNER JOIN users ON comments.user_id = users.id
+INNER JOIN users ON posts.user_id = users.id
 WHERE comments.body LIKE '%matrix%';
 
 -- 12
