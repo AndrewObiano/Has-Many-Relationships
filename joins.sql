@@ -75,3 +75,5 @@ INNER JOIN users ON posts.user_id = users.id
 INNER JOIN comments ON comments.post_id = posts.id
 INNER JOIN users AS users2 ON comments.user_id = users2.id
 WHERE (comments.body LIKE '%SSL%' OR comments.body LIKE '%firewall%') AND posts.content LIKE '%nemo%';
+
+-- Test commit
